@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         /*make sure to use the same name of the arduino module.
         And check if it's paired with your device */
-        mBlue = BluetoothArduino.getInstance("Paradox");
+        mBlue = BluetoothArduino.getInstance("HC-05");
         message = (TextView) findViewById(R.id.message);
         if (setup()) {
             draw();
